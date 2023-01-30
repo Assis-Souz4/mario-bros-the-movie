@@ -1,0 +1,131 @@
+body {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+.fundo-video {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.fundo-video .video {
+  height: 100vh;
+  width: 100vw;
+}
+
+.fundo-video::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 52, 50, 0.749);
+  visibility: hidden; /*esconde a modal */
+}
+.conteudo-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  border-radius: 5px;
+  gap: 15px;
+}
+
+.fechar-modal {
+  background-color: #fff;
+  color: #ff0021;
+  font-size: 20px;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.modal.aberto {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal iframe {
+  border-width: 0;
+  width: 640px;
+  height: 360px;
+}
+
+.cabecalho {
+  /* background-color: black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.cabecalho .logo {
+  width: 65px;
+}
+.cabecalho .menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 15px;
+}
+.cabecalho nav li a {
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+.cabecalho nav li a:hover {
+  background-color: #d5011b;
+}
+.conteiner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  height: calc(100vh -200px);
+  padding: 0 30px 30px;
+}
+.conteiner .informacoes p {
+  color: #a8adb7;
+  width: 85%;
+  font-size: 18px;
+  margin: 30px 0;
+}
+.conteiner .img-titulo {
+  max-width: 500px;
+}
+
+.informacoes .botao-treiller,
+a {
+  background-color: #ff0021;
+  color: #fff;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+}
+.informacoes .botao-treiller:hover {
+  transform: scale(1.1);
+}

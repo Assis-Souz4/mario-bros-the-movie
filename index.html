@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+
+
+
 </head>
 
 <body>
@@ -22,8 +29,8 @@
         <a><img class="logo" src="./src/img/logo-chapeu-mario.png" alt="logo do mario"></a>
         <nav>
             <ul class="menu">
-                <li>Home</li>
-                <li>Detalhes</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Detalhes</a></li>
             </ul>
         </nav>
     </header>
@@ -36,6 +43,13 @@
             <button class="botao-treiller"><a href="">Veja o treiller</a></button>
         </div>
         <img class="mario" src="./src/img/super-mario-chars.png" alt="imagem do mario e sua equipe">
+
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" src="https://youtu.be/SIc7-QoAav4" frameborder="1" width="560" height="315" title="treiller oficial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
 </body>
 
