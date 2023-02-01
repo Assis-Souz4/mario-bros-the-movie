@@ -4,8 +4,9 @@
   padding: 0;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: #fff;
 }
